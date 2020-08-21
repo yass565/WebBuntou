@@ -478,7 +478,14 @@
                     <div class="col-lg-9 px-4">
                         <h3 class="fs-2 fs-sm-3 text-white">Souhaitez-vous rejoindre nos top users ? </h3>
                         <p class="lead font-italic text-400 px-lg-7">Préenregistrez-vous dès maintenant parmi les 1000 premiers tops users et recevez 15 000 FCFA de solde bienvenue pour vos premiers paiements.</p>
-                        <a class="btn btn-outline-light mt-4 btn-sm border-2x" href="#">S'enregistrer</a>
+                        <form class="zform mt-4" method="POST">
+                            <input class="form-control border-300" type="hidden" name="to" value="username@domain.extension">
+                            <input class="form-control border-300 mt-3" type="text" placeholder="Nom Complet" aria-label="Text input with dropdown button">
+                            <input class="form-control border-300 mt-3" type="text" placeholder="Numero de téléphone" aria-label="Text input with dropdown button">
+                            <input  class="form-control border-300 mt-3" type="text" placeholder="E-mail" >
+                            <button class="btn btn-outline-light mt-4 btn-sm border-2x" type="submit">S'enregistrer<span class="fa fa-paper-plane ml-1"></span></button>
+                            <div class="zform-feedback mt-4"></div>
+                        </form>
                     </div>
                 </div>
             </div>
