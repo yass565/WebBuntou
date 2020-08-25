@@ -197,7 +197,7 @@
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-12 mb-5 mb-md-7 text-center">
-                        <h2 class="fs-3 fs-sm-4" style="font-family:'Arvo', sans-serif;">Paiements sécurisés</h2>
+                        <h2 class="fs-3 fs-sm-4" style="font-family:'Arvo', sans-serif;">PAIEMENTS SECURISES </h2>
                     </div>
                     <div class="col-lg-5 pr-lg-4 mb-4">
                         <div class="media" data-zanim-timeline="{}" data-zanim-trigger="scroll">
@@ -291,7 +291,7 @@
                   <g>
                     <path class="play-path" d="M208.31,29.4A129.12,129.12,0,1,1,137.1,8m-1.48,170.53L199.94,137,104.07,79.46v113"></path>
                   </g>
-                </svg><span class="h4 mt-3 text-white" data-zanim-xs='{"from":{"letter-spacing":"0.2em","opacity":0},"to":{"letter-spacing":0,"opacity":1},"delay":0.8}' data-zanim-trigger="scroll">watch the reel</span></a>
+                </svg><span class="h4 mt-3 text-white" data-zanim-xs='{"from":{"letter-spacing":"0.2em","opacity":0},"to":{"letter-spacing":0,"opacity":1},"delay":0.8}' data-zanim-trigger="scroll"> Découvrez Qui nous sommes </span></a>
                     </div>
                 </div>
             </div>
@@ -306,337 +306,294 @@
 
         <!-- ============================================-->
         <!-- <section> begin ============================-->
-        <section class="text-center pt-0 pb-4" id="default-gallery">
-            <div class="containerr">
-
-                <div class="row justify-content-center">
-                    <div class="col-lg-6 mb-7 text-center">
-                        <h2 class="fs-3 fs-sm-4 text-underline mb-3">Comment ça marche?</h2>
-                        <p class="text-500 font-italic">L’acheteur et le vendeur s’accorde sur le prix et la commande <br/>Le paiement est bloqué sur Buntou <br/>Le vendeur livre les biens ou services <br/>L’acheteur vérifie et approuve les biens ou services <br/>Buntou libère instantanément
-                            le paiement vers le vendeur.</p>
-                    </div>
-                </div>
-                <div class="slider">
-                    <img class="active" src="https://images.unsplash.com/photo-1559467713-f830ec30e3e4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80">
-                    <img src="https://images.unsplash.com/photo-1590634875887-a6a516622e2a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80">
-                    <img src="https://images.unsplash.com/photo-1590664216212-62e763768cae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
-                </div>
-
-                <div class="cont-btn">
-                    <div class="btn-nav left">←</div>
-                    <div class="btn-nav right">→</div>
-                </div>
-
+        <section class="admeo"></section>
+        <div class="mercy" style="padding-bottom:300px ; width: 60%; margin: auto;">
+            <div class="col-12 mb-5 mb-md-7 text-center">
+                <h2 class="fs-3 fs-sm-4" style="font-family:'Arvo', sans-serif;"> COMMENT CA MARCHE? PETITE VISITE GUIDEE </h2>
             </div>
-            <style>
-                .containerr {
-                    max-width: 800px;
-                    margin: 0 auto;
-                    padding: 50px;
-                }
-                
-                .slider img {
-                    max-width: 100%;
-                    display: none;
-                }
-                
-                img.active {
-                    display: block;
-                    animation: fade 0.8s;
-                }
-                
-                @keyframes fade {
-                    from {
-                        opacity: 0;
-                    }
-                    to {
-                        opacity: 1;
-                    }
-                }
-                
-                .btn-nav {
-                    font-size: 50px;
-                    margin: 0 15px;
-                    cursor: pointer;
-                }
-            </style>
-            <script>
-                const items = document.querySelectorAll('.slider img');
-                const nbSlide = items.length; // nombre d'image dans le tableau plus haut
-                const suivant = document.querySelector('.right');
-                const precedent = document.querySelector('.left');
-                let count = 0;
+            <div class="owl-carousel owl-theme owl-dots-inner owl-theme-white h-100" style="border:1px solid10%;" data-options='{"items":1,"autoplay":true,"loop":true,"autoplayHoverPause":true,"animateOut":"fadeOut","nav":true}' data-zanim-lg='{"animation":"zoom-out","delay":0}'
+                data-zanim-trigger="scroll">
+                <div class="min-vh-lg-100 py-9">
+                    <div class="bg-holder" style="background-image:url(assets/img/headers/header-3.jpg); border-radius: 3%;">
+                    </div>
 
-                function slideSuivante() {
-                    items[count].classList.remove('active');
-
-                    if (count < nbSlide - 1) {
-                        count++;
-                    } else {
-                        count = 0;
-                    }
-
-                    items[count].classList.add('active');
-                    console.log(count);
-                }
-
-                suivant.addEventListener('click', slideSuivante);
-
-                function slidePrecedente() {
-                    items[count].classList.remove('active');
-
-                    if (count > 0) {
-                        count--;
-                    } else {
-                        count = nbSlide - 1;
-                    }
-
-                    items[count].classList.add('active');
-                    console.log(count);
-                }
-                precedent.addEventListener('click', slidePrecedente);
-
-                function keyPress(e) {
-                    if (e.keyCode == 37) {
-                        slidePrecedente()
-                    } else if (e.keyCode === 39) {
-                        slideSuivante();
-                    }
-                }
-                document.addEventListener('keydown', keyPress);
-            </script>
-            <!-- end of .container-->
-        </section>
-        <!-- <section> close ============================-->
-        <!-- ============================================-->
-
-
-        <!-- ============================================-->
-        <!-- <section> begin ============================-->
-        <section class="py-0" id="default-cta-1">
-            <div class="container">
-                <div class="position-absolute overflow-hidden a-0">
-                    <div class="bg-holder overlay rounded" style="background-image:url(assets/img/headers/header-16.jpg);" data-zanim-trigger="scroll" data-zanim-lg='{"animation":"zoom-out","delay":0}'></div>
                     <!--/.bg-holder-->
                 </div>
-                <div class="row justify-content-center text-center py-7">
-                    <div class="col-lg-9 px-4">
-                        <h3 class="fs-2 fs-sm-3 text-white">Souhaitez-vous rejoindre nos top users ? </h3>
-                        <p class="lead font-italic text-400 px-lg-7">Préenregistrez-vous dès maintenant parmi les 1000 premiers tops users et recevez 15 000 FCFA de solde bienvenue pour vos premiers paiements.</p>
-                        <form class="zform mt-4" method="POST">
-                            <input class="form-control border-300" type="hidden" name="to" value="username@domain.extension">
-                            <input class="form-control border-300 mt-3" type="text" placeholder="Nom Complet" aria-label="Text input with dropdown button">
-                            <input class="form-control border-300 mt-3" type="text" placeholder="Numero de téléphone" aria-label="Text input with dropdown button">
-                            <input class="form-control border-300 mt-3" type="text" placeholder="E-mail">
-                            <button class="btn btn-outline-light mt-4 btn-sm border-2x" type="submit">S'enregistrer<span class="fa fa-paper-plane ml-1"></span></button>
-                            <div class="zform-feedback mt-4"></div>
-                        </form>
-                    </div>
+                <div class="min-vh-lg-100 py-9">
+                    <div class="bg-holder" style="background-image:url(assets/img/headers/header-2.jpg); border-radius: 3%;"></div>
+                    <!--/.bg-holder-->
+                </div>
+                <div class="min-vh-lg-100 py-9">
+                    <div class="bg-holder" style="background-image:url(assets/img/headers/header-12.jpg); border-radius: 3%;"></div>
+                    <!--/.bg-holder-->
+                </div>
+                <div class="min-vh-lg-100 py-9">
+                    <div class="bg-holder" style="background-image:url(assets/img/headers/header-21.jpg); border-radius: 3%;"></div>
+                    <!--/.bg-holder-->
                 </div>
             </div>
+            <div class="owl-carousel owl-theme owl-dots-inner owl-theme-white h-100" style="border:1px solid10%;" data-options='{"items":1,"autoplay":true,"loop":true,"autoplayHoverPause":true,"animateOut":"fadeOut","nav":true}' data-zanim-lg='{"animation":"zoom-out","delay":0}'
+                data-zanim-trigger="scroll">
+                <div class="min-vh-lg-100 py-9">
+                    <div class="bg-holder"> Mercyful
+                    </div>
+
+                    <!--/.bg-holder-->
+                </div>
+                <div class="min-vh-lg-100 py-9">
+                    <div class="bg-holder"> SAVIOUR
+
+                        <!--/.bg-holder-->
+                    </div>
+                    <div class="min-vh-lg-100 py-9">
+                        <div class="bg-holder"> GOD
+                        </div>
+
+                        <!--/.bg-holder-->
+                    </div>
+                    <div class="min-vh-lg-100 py-9">
+                        <div class="bg-holder"> JESUS
+                        </div>
+
+                        <!--/.bg-holder-->
+                    </div>
+
+                </div>
+            </div>
+
+
             <!-- end of .container-->
-        </section>
-        <!-- <section> close ============================-->
-        <!-- ============================================-->
+            </section>
+            <!-- <section> close ============================-->
+            <!-- ============================================-->
 
-        <!-- ============================================-->
-        <!-- <section> begin ============================-->
-        <section class="border-top border-300" id="default-process">
-            <div class="container">
-                <div class="row justify-content-center text-center mb-6">
-                    <div class="col-lg-6">
-                        <h2 class="fs-3 fs-sm-4 text-underline mb-3">Pour qui?</h2>
-                        <hr class="hr-short mt-5 border-300" />
+
+            <!-- ============================================-->
+            <!-- <section> begin ============================-->
+            <section class="py-0" id="default-cta-1">
+                <div class="container">
+                    <div class="position-absolute overflow-hidden a-0">
+                        <div class="bg-holder overlay rounded" style="background-image:url(assets/img/headers/header-16.jpg);" data-zanim-trigger="scroll" data-zanim-lg='{"animation":"zoom-out","delay":0}'></div>
+                        <!--/.bg-holder-->
+                    </div>
+                    <div class="row justify-content-center text-center py-7">
+                        <div class="col-lg-9 px-4">
+                            <h3 class="fs-2 fs-sm-3 text-white">Souhaitez-vous rejoindre nos top users ? </h3>
+                            <p class="lead font-italic text-400 px-lg-7">Préenregistrez-vous dès maintenant parmi les 1000 premiers tops users et recevez 15 000 FCFA de solde bienvenue pour vos premiers paiements.</p>
+                            <form class="zform mt-4" method="POST">
+                                <input class="form-control border-300" type="hidden" name="to" value="username@domain.extension">
+                                <input class="form-control border-300 mt-3" type="text" placeholder="Nom Complet" aria-label="Text input with dropdown button">
+                                <input class="form-control border-300 mt-3" type="text" placeholder="Numero de téléphone" aria-label="Text input with dropdown button">
+                                <input class="form-control border-300 mt-3" type="text" placeholder="E-mail">
+                                <button class="btn btn-outline-light mt-4 btn-sm border-2x" type="submit">S'enregistrer<span class="fa fa-paper-plane ml-1"></span></button>
+                                <div class="zform-feedback mt-4"></div>
+                            </form>
+                        </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-12 pl-lg-7">
-                        <div class="row align-items-end">
-                            <div class="col-lg-6 order-lg-2 text-center">
-                                <img class="img-fluid" src="assets/img/illustration/process-01.svg" alt="" width="400" />
+                <!-- end of .container-->
+            </section>
+            <!-- <section> close ============================-->
+            <!-- ============================================-->
+
+            <!-- ============================================-->
+            <!-- <section> begin ============================-->
+            <section class="border-top border-300" id="default-process">
+                <div class="container">
+                    <div class="row justify-content-center text-center mb-6">
+                        <div class="col-lg-6">
+                            <h2 class="fs-3 fs-sm-4 text-underline mb-3">Pour qui?</h2>
+                            <hr class="hr-short mt-5 border-300" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 pl-lg-7">
+                            <div class="row align-items-end">
+                                <div class="col-lg-6 order-lg-2 text-center">
+                                    <img class="img-fluid" src="assets/img/illustration/process-01.svg" alt="" width="400" />
+                                </div>
+                                <div class="col-lg-6 border-lg-left border-lg-bottom border-300 pb-lg-8 mt-4 mt-lg-0 mb-8 mb-lg-0">
+                                    <div class="process-item ml-6 ml-sm-8 ml-lg-6"><span class="process-item-number">01</span>
+                                        <h3 class="for-who">Particuliers</h3>
+                                        <p>- Envoyez un paiement <br/> - Recevez un paiement <br/> - Réclamez un paiement <br/> - Payez au-delà des frontières<br/> - Organiser des collectes d’argent <br/>
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-lg-6 border-lg-left border-lg-bottom border-300 pb-lg-8 mt-4 mt-lg-0 mb-8 mb-lg-0">
-                                <div class="process-item ml-6 ml-sm-8 ml-lg-6"><span class="process-item-number">01</span>
-                                    <h3 class="for-who">Particuliers</h3>
-                                    <p>- Envoyez un paiement <br/> - Recevez un paiement <br/> - Réclamez un paiement <br/> - Payez au-delà des frontières<br/> - Organiser des collectes d’argent <br/>
-                                    </p>
+                            <div class="row">
+                                <div class="col-lg-6 border-lg-right border-lg-bottom border-300 text-center py-lg-8">
+                                    <img class="img-fluid" src="assets/img/illustration/process-02.svg" alt="" width="400" />
+                                </div>
+                                <div class="col-lg-6 mt-4 mt-lg-0 mb-8 mb-lg-0 my-lg-8">
+                                    <div class="process-item ml-6 ml-sm-8 ml-lg-6"><span class="process-item-number">02</span>
+                                        <h3 class="for-who">Professionnels</h3>
+                                        <p>- Recevez vos paiements<br/> - Effectuez des paiements<br/> - Adoptez le TPE<br/> - Investissez dans des projets fiables<br/>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 order-lg-2 text-center align-self-center">
+                                    <img class="img-fluid" src="assets/img/illustration/process-03.svg" alt="" width="400" />
+                                </div>
+                                <div class="col-lg-6 border-lg-left border-lg-bottom border-300 py-lg-8 mt-4 mt-lg-0 mb-8 mb-lg-0">
+                                    <div class="process-item ml-6 ml-sm-8 ml-lg-6"><span class="process-item-number">03</span>
+                                        <h3 class="for-who">Marketplace</h3>
+                                        <p>- Automatisez les ventes for quality.</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-lg-6 border-lg-right border-lg-bottom border-300 text-center py-lg-8">
-                                <img class="img-fluid" src="assets/img/illustration/process-02.svg" alt="" width="400" />
-                            </div>
-                            <div class="col-lg-6 mt-4 mt-lg-0 mb-8 mb-lg-0 my-lg-8">
-                                <div class="process-item ml-6 ml-sm-8 ml-lg-6"><span class="process-item-number">02</span>
-                                    <h3 class="for-who">Professionnels</h3>
-                                    <p>- Recevez vos paiements<br/> - Effectuez des paiements<br/> - Adoptez le TPE<br/> - Investissez dans des projets fiables<br/>
-                                    </p>
+                    </div>
+                </div>
+                <!-- end of .container-->
+            </section>
+            <!-- <section> close ============================-->
+            <!-- ============================================-->
+
+
+
+
+
+            <!-- ============================================-->
+            <!-- <section> begin ============================-->
+            <section class="py-0" id="page-contact">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-6 bg-white pt-8 pb-4 pt-lg-8">
+                            <div class="row h-100 align-items-center justify-content-center">
+                                <div class="col-lg-8" data-zanim-lg='{"animation":"slide-left","delay":0.6}' data-zanim-trigger="scroll">
+                                    <h1 class="text-underline d-inline-block mb-4 mb-lg-6">contact</h1>
+                                    <p class="font-weight-bold mb-0">Address:<span class="ml-2 font-weight-normal">Via Cerva 19 - Milano, Italy</span></p>
+                                    <p class="font-weight-bold mb-0">Phone:<span class="ml-2 font-weight-normal"><a class="text-700" href="tel:+13234324534">+13234324534</a></span></p>
+                                    <p class="font-weight-bold mb-4">E-mail:<span class="ml-2 font-weight-normal font-italic"><a class="text-700" href="mailto:info@sparrow.com">info@buntou.com</a></span></p>
+                                    <div class="mt-3">
+                                        <a class="btn btn-dark btn-sm mr-2" href="#"><span class="fab fa-twitter" data-fa-transform="grow-6"></span></a>
+                                        <a class="btn btn-dark btn-sm mr-2" href="#"><span class="fab fa-facebook-f" data-fa-transform="grow-6"></span></a>
+                                        <a class="btn btn-dark btn-sm mr-2" href="#"><span class="fab fa-google-plus-g" data-fa-transform="grow-6"></span></a>
+                                        <a class="btn btn-dark btn-sm" href="#"><span class="fab fa-linkedin-in" data-fa-transform="grow-6"></span></a>
+                                    </div>
+                                    <h3 class="mt-7">Laissez-nous un commentaire</h3>
+                                    <form class="zform mt-4" method="POST">
+                                        <input class="form-control border-300" type="hidden" name="to" value="username@domain.extension">
+                                        <input class="form-control border-300 mt-3 form-contact" type="text" placeholder="Nom Prénom" aria-label="Text input with dropdown button">
+                                        <input class="form-control border-300 mt-3" type="text" placeholder="Téléphone" aria-label="Text input with dropdown button">
+                                        <textarea class="form-control border-300 mt-3 form-contact" rows="11" placeholder="Commentaire" required></textarea>
+                                        <button class="btn btn-block btn-dark mt-4 send" type="submit">Envoyer<span class="fa fa-paper-plane ml-1"></span></button>
+                                        <div class="zform-feedback mt-4"></div>
+                                    </form>
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-lg-6 order-lg-2 text-center align-self-center">
-                                <img class="img-fluid" src="assets/img/illustration/process-03.svg" alt="" width="400" />
-                            </div>
-                            <div class="col-lg-6 border-lg-left border-lg-bottom border-300 py-lg-8 mt-4 mt-lg-0 mb-8 mb-lg-0">
-                                <div class="process-item ml-6 ml-sm-8 ml-lg-6"><span class="process-item-number">03</span>
-                                    <h3 class="for-who">Marketplace</h3>
-                                    <p>- Automatisez les ventes for quality.</p>
-                                </div>
+                        <div class="col-lg-6 px-0">
+                            <div class="sticky-top ovrflow-hidden-y">
+                                <div class="googlemap min-vh-100 d-none d-lg-block" data-latlng="48.8588723,2.2932638" data-pov='{"heading":120,"pitch":0}' data-scrollwheel="false" data-icon="assets/images/map-marker.png" data-zoom="1" data-theme="streetview" data-zanim-lg='{"animation":"zoom-out-slide-left","delay":0.4}'
+                                    data-zanim-trigger="scroll"></div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- end of .container-->
-        </section>
-        <!-- <section> close ============================-->
-        <!-- ============================================-->
+                <!-- end of .container-->
+            </section>
+            <!-- <section> close ============================-->
+            <!-- ============================================-->
 
 
 
-
-
-        <!-- ============================================-->
-        <!-- <section> begin ============================-->
-        <section class="py-0" id="page-contact">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-6 bg-white pt-8 pb-4 pt-lg-8">
-                        <div class="row h-100 align-items-center justify-content-center">
-                            <div class="col-lg-8" data-zanim-lg='{"animation":"slide-left","delay":0.6}' data-zanim-trigger="scroll">
-                                <h1 class="text-underline d-inline-block mb-4 mb-lg-6">contact</h1>
-                                <p class="font-weight-bold mb-0">Address:<span class="ml-2 font-weight-normal">Via Cerva 19 - Milano, Italy</span></p>
-                                <p class="font-weight-bold mb-0">Phone:<span class="ml-2 font-weight-normal"><a class="text-700" href="tel:+13234324534">+13234324534</a></span></p>
-                                <p class="font-weight-bold mb-4">E-mail:<span class="ml-2 font-weight-normal font-italic"><a class="text-700" href="mailto:info@sparrow.com">info@buntou.com</a></span></p>
-                                <div class="mt-3">
-                                    <a class="btn btn-dark btn-sm mr-2" href="#"><span class="fab fa-twitter" data-fa-transform="grow-6"></span></a>
-                                    <a class="btn btn-dark btn-sm mr-2" href="#"><span class="fab fa-facebook-f" data-fa-transform="grow-6"></span></a>
-                                    <a class="btn btn-dark btn-sm mr-2" href="#"><span class="fab fa-google-plus-g" data-fa-transform="grow-6"></span></a>
-                                    <a class="btn btn-dark btn-sm" href="#"><span class="fab fa-linkedin-in" data-fa-transform="grow-6"></span></a>
-                                </div>
-                                <h3 class="mt-7">Laissez-nous un commentaire</h3>
-                                <form class="zform mt-4" method="POST">
-                                    <input class="form-control border-300" type="hidden" name="to" value="username@domain.extension">
-                                    <input class="form-control border-300 mt-3 form-contact" type="text" placeholder="Nom Prénom" aria-label="Text input with dropdown button">
-                                    <input class="form-control border-300 mt-3" type="text" placeholder="Téléphone" aria-label="Text input with dropdown button">
-                                    <textarea class="form-control border-300 mt-3 form-contact" rows="11" placeholder="Commentaire" required></textarea>
-                                    <button class="btn btn-block btn-dark mt-4 send" type="submit">Envoyer<span class="fa fa-paper-plane ml-1"></span></button>
-                                    <div class="zform-feedback mt-4"></div>
-                                </form>
-                            </div>
+            <!--===============================================-->
+            <!--    Footer-->
+            <!--===============================================-->
+            <footer class="footer bg-black text-600 py-4 text-sans-serif text-center overflow-hidden" data-zanim-timeline="{}" data-zanim-trigger="scroll">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-4 order-lg-2">
+                            <a class="indicator indicator-up" href="#top" data-fancyscroll="data-fancyscroll"><span class="indicator-arrow indicator-arrow-one" data-zanim-xs='{"from":{"opacity":0,"y":15},"to":{"opacity":1,"y":-5,"scale":1},"ease":"Back.easeOut","duration":0.4,"delay":0.9}'></span><span class="indicator-arrow indicator-arrow-two" data-zanim-xs='{"from":{"opacity":0,"y":15},"to":{"opacity":1,"y":-5,"scale":1},"ease":"Back.easeOut","duration":0.4,"delay":1.05}'></span></a>
+                        </div>
+                        <div class="col-lg-4 text-lg-left mt-4 mt-lg-0">
+                            <p class="fs--1 text-uppercase ls font-weight-bold mb-0">Copyright &copy; 2018 Sparrow&trade; inc.</p>
+                        </div>
+                        <div class="col-lg-4 text-lg-right order-lg-2 mt-2 mt-lg-0">
+                            <p class="fs--1 text-uppercase ls font-weight-bold mb-0">Made with<span class="text-danger fas fa-heart mx-1"></span>by
+                                <a class="text-600" href="https://themewagon.com/">Themewagon</a>
+                            </p>
                         </div>
                     </div>
-                    <div class="col-lg-6 px-0">
-                        <div class="sticky-top ovrflow-hidden-y">
-                            <div class="googlemap min-vh-100 d-none d-lg-block" data-latlng="48.8588723,2.2932638" data-pov='{"heading":120,"pitch":0}' data-scrollwheel="false" data-icon="assets/images/map-marker.png" data-zoom="1" data-theme="streetview" data-zanim-lg='{"animation":"zoom-out-slide-left","delay":0.4}'
-                                data-zanim-trigger="scroll"></div>
+                </div>
+            </footer>
+
+            <!-- Cookie Notice-->
+            <div class="toast bg-dark text-white shadow-none notice" id="cookie-notice" role="alert" data-options='{"autoShow":false,"autoShowDelay":5000,"showOnce":true,"cookieExpireTime":7200000}' data-autohide="false" aria-live="assertive" aria-atomic="true">
+                <div class="toast-body p-4">
+                    <button class="close text-white text-shadow-none position-absolute t-0 r-0 p-2 mr-1 fs-1" type="button" data-dismiss="toast" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    <div class="media">
+                        <img class="mr-3" src="assets/img/icons/cookie-notice.png" width="50" alt="" />
+                        <div class="media-body">
+                            <p class="fs-0 ls text-sans-serif">Our site uses cookies. By continuing to use our site, you agree to our
+                                <a class="text-white text-underline" href="components/sparrow/cookie-notice.html">Cookie Policy.</a>
+                            </p>
+                            <button class="btn btn-outline-light btn-sm text-uppercase border-700" type="button" data-dismiss="toast" aria-label="Close">Ok, I understand</button>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- end of .container-->
-        </section>
-        <!-- <section> close ============================-->
-        <!-- ============================================-->
 
-
-
-        <!--===============================================-->
-        <!--    Footer-->
-        <!--===============================================-->
-        <footer class="footer bg-black text-600 py-4 text-sans-serif text-center overflow-hidden" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-4 order-lg-2">
-                        <a class="indicator indicator-up" href="#top" data-fancyscroll="data-fancyscroll"><span class="indicator-arrow indicator-arrow-one" data-zanim-xs='{"from":{"opacity":0,"y":15},"to":{"opacity":1,"y":-5,"scale":1},"ease":"Back.easeOut","duration":0.4,"delay":0.9}'></span><span class="indicator-arrow indicator-arrow-two" data-zanim-xs='{"from":{"opacity":0,"y":15},"to":{"opacity":1,"y":-5,"scale":1},"ease":"Back.easeOut","duration":0.4,"delay":1.05}'></span></a>
-                    </div>
-                    <div class="col-lg-4 text-lg-left mt-4 mt-lg-0">
-                        <p class="fs--1 text-uppercase ls font-weight-bold mb-0">Copyright &copy; 2018 Sparrow&trade; inc.</p>
-                    </div>
-                    <div class="col-lg-4 text-lg-right order-lg-2 mt-2 mt-lg-0">
-                        <p class="fs--1 text-uppercase ls font-weight-bold mb-0">Made with<span class="text-danger fas fa-heart mx-1"></span>by
-                            <a class="text-600" href="https://themewagon.com/">Themewagon</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </footer>
-
-        <!-- Cookie Notice-->
-        <div class="toast bg-dark text-white shadow-none notice" id="cookie-notice" role="alert" data-options='{"autoShow":false,"autoShowDelay":5000,"showOnce":true,"cookieExpireTime":7200000}' data-autohide="false" aria-live="assertive" aria-atomic="true">
-            <div class="toast-body p-4">
-                <button class="close text-white text-shadow-none position-absolute t-0 r-0 p-2 mr-1 fs-1" type="button" data-dismiss="toast" aria-label="Close"><span aria-hidden="true">×</span></button>
-                <div class="media">
-                    <img class="mr-3" src="assets/img/icons/cookie-notice.png" width="50" alt="" />
-                    <div class="media-body">
-                        <p class="fs-0 ls text-sans-serif">Our site uses cookies. By continuing to use our site, you agree to our
-                            <a class="text-white text-underline" href="components/sparrow/cookie-notice.html">Cookie Policy.</a>
-                        </p>
-                        <button class="btn btn-outline-light btn-sm text-uppercase border-700" type="button" data-dismiss="toast" aria-label="Close">Ok, I understand</button>
+            <!--===============================================-->
+            <!--    Modal for language selection-->
+            <!--===============================================-->
+            <!-- Modal-->
+            <div class="modal fade fade-in" id="languageModal" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-xs mx-auto" role="document">
+                    <div class="modal-content bg-black">
+                        <div class="modal-body text-center p-0">
+                            <button class="close text-white position-absolute t-0 r-0 times-icon mt-2 mr-2 p-2" type="button" data-dismiss="modal" aria-label="Close"></button>
+                            <ul class="list-unstyled pl-0 my-0 py-4 text-sans-serif">
+                                <li>
+                                    <a class="text-white font-weight-bold pt-1 d-block" href="home-default.html">English</a>
+                                </li>
+                                <li>
+                                    <a class="pt-1 d-block text-500" href="#">Français</a>
+                                </li>
+                                <li>
+                                    <a class="text-500 pt-1 d-block" href="page-rtl.html">عربى</a>
+                                </li>
+                                <li>
+                                    <a class="pt-1 d-block text-500" href="#">Deutsche</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <!--===============================================-->
-        <!--    Modal for language selection-->
-        <!--===============================================-->
-        <!-- Modal-->
-        <div class="modal fade fade-in" id="languageModal" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-xs mx-auto" role="document">
-                <div class="modal-content bg-black">
-                    <div class="modal-body text-center p-0">
-                        <button class="close text-white position-absolute t-0 r-0 times-icon mt-2 mr-2 p-2" type="button" data-dismiss="modal" aria-label="Close"></button>
-                        <ul class="list-unstyled pl-0 my-0 py-4 text-sans-serif">
-                            <li>
-                                <a class="text-white font-weight-bold pt-1 d-block" href="home-default.html">English</a>
-                            </li>
-                            <li>
-                                <a class="pt-1 d-block text-500" href="#">Français</a>
-                            </li>
-                            <li>
-                                <a class="text-500 pt-1 d-block" href="page-rtl.html">عربى</a>
-                            </li>
-                            <li>
-                                <a class="pt-1 d-block text-500" href="#">Deutsche</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
+            <!-- ===============================================-->
+            <!--    JavaScripts-->
+            <!-- ===============================================-->
+            <script src="assets/js/jquery.min.js"></script>
+            <script src="assets/js/popper.min.js"></script>
+            <script src="assets/js/bootstrap.js"></script>
+            <script src="assets/js/plugins.js"></script>
+            <script src="assets/lib/loaders.css/loaders.css.js"></script>
+            <script src="assets/js/stickyfill.min.js"></script>
+            <script src="assets/lib/is_js/is.min.js"></script>
+            <script src="assets/lib/jtap/jquery.tap.js"></script>
+            <script src="assets/js/rellax.min.js"></script>
+            <script src="assets/lib/fancybox/jquery.fancybox.min.js"></script>
+            <!-- Global site tag (gtag.js) - Google Analytics-->
+            <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-122907869-1"></script>
+            <script>
+                window.dataLayer = window.dataLayer || [];
 
-        <!-- ===============================================-->
-        <!--    JavaScripts-->
-        <!-- ===============================================-->
-        <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/popper.min.js"></script>
-        <script src="assets/js/bootstrap.js"></script>
-        <script src="assets/js/plugins.js"></script>
-        <script src="assets/lib/loaders.css/loaders.css.js"></script>
-        <script src="assets/js/stickyfill.min.js"></script>
-        <script src="assets/lib/is_js/is.min.js"></script>
-        <script src="assets/lib/jtap/jquery.tap.js"></script>
-        <script src="assets/js/rellax.min.js"></script>
-        <script src="assets/lib/fancybox/jquery.fancybox.min.js"></script>
-        <!-- Global site tag (gtag.js) - Google Analytics-->
-        <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-122907869-1"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-            gtag('js', new Date());
-            gtag('config', 'UA-122907869-1');
-        </script>
-        <script src="assets/lib/owl.carousel/owl.carousel.js"></script>
-        <script src="assets/lib/lightbox2/js/lightbox.min.js"></script>
-        <script src="../../../cdnjs.cloudflare.com/ajax/libs/babel-core/5.6.15/browser-polyfill.min.js"></script>
-        <script src="assets/js/progressbar.min.js"></script>
-        <script src="assets/js/theme.js"></script>
+                function gtag() {
+                    dataLayer.push(arguments);
+                }
+                gtag('js', new Date());
+                gtag('config', 'UA-122907869-1');
+            </script>
+            <script src="assets/lib/owl.carousel/owl.carousel.js"></script>
+            <script src="assets/lib/lightbox2/js/lightbox.min.js"></script>
+            <script src="../../../cdnjs.cloudflare.com/ajax/libs/babel-core/5.6.15/browser-polyfill.min.js"></script>
+            <script src="assets/js/progressbar.min.js"></script>
+            <script src="assets/js/theme.js"></script>
 </body>
 
 
